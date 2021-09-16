@@ -1,0 +1,9 @@
+<view class="title">地区选择</view>
+<custom-picker-region bind:changes="bindMultiPickerChange">
+  <view slot="title">
+    请选择地区
+  </view>
+  <view slot="label">
+    {{ label }}
+  </view>
+</custom-picker-region>

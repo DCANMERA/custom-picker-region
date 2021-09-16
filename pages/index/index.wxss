@@ -1,0 +1,42 @@
+.title {
+  position: relative;
+  margin: 0 40rpx 28rpx;
+  color: #6a6a77;
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 1.5;
+  visibility: inherit;
+}
+
+.title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -22rpx;
+  top: 50%;
+  margin-top: -18rpx;
+  width: 6rpx;
+  height: 36rpx;
+  background-color: #6190e8;
+  -webkit-box-shadow: 0 8rpx 20rpx 0 rgb(97 144 232 / 20%);
+  box-shadow: 0 8rpx 20rpx 0 rgb(97 144 232 / 20%);
+  border-radius: 4rpx;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -28rpx;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  border-bottom: 2rpx solid #d6e4ef;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: none;
+}

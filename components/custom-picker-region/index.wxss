@@ -1,0 +1,72 @@
+.custom-picker {
+  position: relative;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #999999;
+  font-size: 30rpx;
+  padding: 24rpx;
+}
+
+.custom-picker .picker-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.custom-picker .picker-container .picker-title {
+  min-height: 40rpx;
+  color: #333333;
+}
+
+.custom-picker .picker-container .picker-title .picker-icon {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.custom-picker .picker-container .picker-label {
+  max-width: 400rpx;
+}
+
+.custom-picker .picker-container .picker-label .picker-label_active {
+  color: #333333;
+}
+
+.custom-picker .picker-container .picker-label .picker-label_text {
+  color: #999999;
+}
+
+.custom-picker .flex-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-picker .ellipsis-l1 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

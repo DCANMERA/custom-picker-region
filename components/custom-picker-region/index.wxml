@@ -1,0 +1,31 @@
+<picker
+  class="custom-picker"
+  mode="multiSelector"
+  range-key="{{ rangeKey }}"
+  value="{{ targetIndex }}"
+  range="{{ pickerRegionList }}"
+  bindchange="bindMultiPickerChange"
+  bindcancel="bindMultiPickerCancel"
+  bindcolumnchange="bindMultiPickerColumnChange"
+>
+  <view class="picker-container">
+    <view class="flex-center ellipsis-l1 picker-title">
+      <slot name="title"></slot>
+    </view>
+    <view class="picker-label">
+      <view
+        wx:if="{{ confirmData[columns - 1].label }}"
+        class="ellipsis-l1 picker-label_active"
+      >
+        <slot name="label"></slot>
+      </view>
+      <view
+        wx:else
+        class="ellipsis-l1 picker-label_text"
+      >
+        {{ label }}
+      </view>
+    </view>
+    <slot />
+  </view>
+</picker>
